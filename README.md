@@ -1,6 +1,9 @@
 # Jewellery Store Project
 This project is a beautifully designed jewellery store website that offers an easy and enjoyable user experience. It is developed using HTML, CSS, Locomotive Scroll, and GSAP.
 
+![Screenshot 2024-09-30 184651](https://github.com/user-attachments/assets/ff43483b-712a-4b0a-8fa5-8325a06312e8)
+![Screenshot 2024-09-30 183032](https://github.com/user-attachments/assets/5393084e-f6ca-4db0-8c53-d561ef3f59dc)
+
 ## Overview
 The jewellery store showcases a wide variety of jewelry products with a focus on aesthetics and usability. The website is responsive and ensures a smooth browsing experience for users.
 
