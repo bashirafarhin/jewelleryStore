@@ -1,0 +1,495 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+*::selection {
+    color: #fff;
+    background-color: black;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #F7F7F7;
+}
+
+#nav {
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+#nav #nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#links {
+    padding: 10px;
+}
+
+#nav-part1 {
+    height: 82px;
+    overflow: hidden;
+}
+
+#nav-part1 svg {
+    display: block;
+}
+
+#nav-part1 img {
+    display: block;
+}
+
+#nav-part2 #links a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0 20px;
+}
+
+#icons {
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #F7F7F7;
+}
+
+#nav-part2 #icons i {
+    font-size: 18px;
+    margin: 0 20px;
+    font-weight: 100;
+}
+
+#cursor {
+    height: 200px;
+    width: 200px;
+    background-color: #D5D5D5;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+#page1 {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    padding: 0 1vw;
+    padding-top: 20vh;
+}
+
+#page1 h1 {
+    font-size: 15.8vw;
+    text-transform: uppercase;
+    font-family: futura;
+    line-height: 14vw;
+    letter-spacing: -8px;
+}
+
+#video-container {
+    height: 100vh;
+    width: 100%;
+    background-color: grey;
+    margin-top: 1vw;
+    position: relative;
+}
+
+#video-container video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#video-container #play{
+    padding: 3vw 2.2vw;
+    text-transform: uppercase;
+    background-color: black;
+    color: #fff;
+    position: fixed;
+    font-size: 1.3vw;
+    font-family: futura;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+}
+
+#page2 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 3vw 1vw;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+#page2 .element {
+    height: 100%;
+    width: 31%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page2 .element img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.1;
+}
+
+#page2 .element .details {
+    position: absolute;
+    will-change: transform;
+    opacity: 1;
+}
+
+#page2 .element .details #details-info{
+    background-color: #f5dfcf;
+    padding: 0 32px;
+    width: 303px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.details .container{
+    background-color: #f5dfcf;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 303px;
+    height: 50px;
+    border-radius: 25px;
+    overflow: hidden;
+    padding-top: 50px;
+    z-index: -1;
+    transition: height 0.25s cubic-bezier(0.22, 0.57, 0.12, .96);
+    will-change: height;
+}
+
+#page2 .element .details .container #products{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container #products #product img{
+    height: 118px;
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+
+.container #products #product p{
+    font-size: 12px;
+    margin: 10px 10px;
+    text-align: center;
+}
+
+.element .details:hover .container{
+    height: auto ;
+}
+
+.quote-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quote-container .quote {
+    width: 40%;
+    padding: 3rem;
+}
+
+.quote-container .quote h1{
+    width: 3rem;
+}
+
+.quote-container .how-we-work {
+    width: 40%;
+    font-size: larger;
+    padding: 3rem;
+}
+
+.how-we-work {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.quote-container .how-we-work .shop a {
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: black;
+}
+
+#page3 {
+    min-height: 120vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.child {
+    height: 70vh;
+    width: 48vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.child img {
+    height: 80%;
+}
+
+.product-info {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.product-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-price {
+    color: gray;
+}
+
+#page4 {
+    width: 95%;
+    margin: auto;
+    font-size: larger;
+    text-transform: uppercase;
+}
+
+.boxes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    margin-top: 150px;
+}
+
+.messages-container {
+    display: flex;
+    margin-top: 2rem;
+    gap: 110px;
+    overflow-x: auto;
+}
+
+.messages-container > div{
+    height: fit-content;
+    cursor: pointer;
+}
+
+.messages-container > div > i {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.messages-container > div > p {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.messages-container::-webkit-scrollbar {
+    display: none;
+}
+
+.message {
+    display: none;
+}
+
+#message-display {
+    max-width: 60%;
+    margin: 50px auto;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+#page5 {
+    width: 100%;
+    text-transform: uppercase;
+    margin-top: 200px;
+    padding-bottom: 100px;
+}
+
+.connect {
+    width: 97%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.connect > div{
+    height: fit-content;
+}
+
+.social-connect > h1 , .about-us > h1 {
+    margin: 0;
+    margin-bottom: 5px;
+    color: gray;
+    font-size: medium;
+}
+
+.social-connect > p , .about-us > p {
+    cursor: pointer;
+    padding: 2px;
+    &:hover {
+        color: gray;
+    }
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.middle > .logo {
+    margin-bottom: 10px;
+    color: gray;
+}
+
+@media (max-width:600px) {
+    #nav {
+        padding: 15px;
+    }
+
+    #links {
+        display: none;
+    }
+
+    #nav-part1 {
+        height: 67px;
+    }
+
+    #nav-part1 svg {
+        height: 67px;
+        width: 80px;
+    }
+
+    #nav #twogoodlogo{
+        height: 40px;
+        margin-left: -20px;
+    }
+
+    #icons {
+        padding: 7px;
+    }
+
+    #nav-part2 #icons i {
+        font-size: 15px;
+    }
+    
+    #page1 {
+        min-height: 70vh;
+        padding: 0 3vw;
+        padding-top: 25vh;
+
+    }
+
+    #page1 h1 {
+        font-size: 15.5vw;
+        letter-spacing: -3px;
+    }
+
+    #video-container {
+        height: 30vh;
+        margin-top: 3vw;
+    }
+
+    #video-container #play {
+        padding: 9.5vw 7.2vw;
+        font-size: 4.5vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+        scale: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    #page2 {
+        padding: 5vw 3vw;
+        flex-direction: column;
+    }
+
+    #page2 .element {
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 3vw;
+    }
+
+    #page2 .element .details {
+        height: 40px;
+        border-radius: 50px;
+        width: 70%;
+        z-index: 9;
+
+    }
+
+    #page3 {
+        justify-content: space-evenly;
+    }
+    
+    .child {
+        height: 54vh;
+        width: 88vw;
+        padding: 15vw;
+    }
+
+    .child img {
+        height: 100%;
+    }
+
+    .quote-container {
+        flex-direction: column;
+    }
+
+    .quote-container .quote {
+        width: 100%;
+    }
+    
+    .quote-container .how-we-work {
+        width: 100%;
+    }
+
+    .connect {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+}
