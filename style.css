@@ -106,6 +106,7 @@ body {
     background-color: grey;
     margin-top: 1vw;
     position: relative;
+    cursor: pointer;
 }
 
 #video-container video {
@@ -119,7 +120,7 @@ body {
     text-transform: uppercase;
     background-color: black;
     color: #fff;
-    position: fixed;
+    position: absolute;
     font-size: 1.3vw;
     font-family: futura;
     border-radius: 50%;

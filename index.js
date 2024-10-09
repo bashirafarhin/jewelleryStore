@@ -56,34 +56,44 @@ const navbarAnimation = () => {
 }
 navbarAnimation();
 
-const videoContainerAnimation = () => {
-    let videoContainer=document.getElementById("video-container");
-    let playBtn=document.getElementById("play");
-    videoContainer.addEventListener("mouseenter",()=>{
-    gsap.to(playBtn,{
-        scale : 1,
-        opacity : 1,
-        ease: "power2.out"
-    })
-  })
+const videoContainerAnimation = () => { 
+  let videoContainer = document.getElementById("video-container");
+  let playBtn = document.getElementById("play");
   
-  videoContainer.addEventListener("mouseleave",()=>{
-    gsap.to(playBtn,{
-        scale : 0,
-        opacity : 0,
-        ease: "power2.out"
-    })
-  })
-  
-  videoContainer.addEventListener("mousemove",(event)=>{
-    gsap.to(playBtn,{
-        left : event.clientX-70,
-        top : event.clientY-80,
-        ease: "power2.out"
-    })
-  })
-}
+  videoContainer.addEventListener("mouseenter", () => {
+      gsap.to(playBtn, {
+          scale: 1,
+          opacity: 1,
+          ease: "power2.out"
+      });
+  });
+
+  videoContainer.addEventListener("mouseleave", () => {
+      gsap.to(playBtn, {
+          scale: 0,
+          opacity: 0,
+          ease: "power2.out"
+      });
+  });
+
+  videoContainer.addEventListener("mousemove", (event) => {
+      const containerRect = videoContainer.getBoundingClientRect();
+      const playBtnWidth = playBtn.offsetWidth;
+      const playBtnHeight = playBtn.offsetHeight;
+
+      const adjustedX = event.clientX - containerRect.left;
+      const adjustedY = event.clientY - containerRect.top;
+
+      gsap.to(playBtn, {
+          left: adjustedX - (playBtnWidth / 2),
+          top: adjustedY - (playBtnHeight / 2),
+          ease: "power2.out"
+      });
+  });
+};
+
 videoContainerAnimation();
+
 
 const loadingAnimation = () => {
     gsap.from("#page1 h1", {
