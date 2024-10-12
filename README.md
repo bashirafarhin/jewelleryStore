@@ -18,3 +18,6 @@ Locomotive Scroll is a lightweight JavaScript library that adds smooth scrolling
 
 ## [About GSAP](https://gsap.com/resources/get-started/#:~:text=What%20is%20%22GSAP%22%3F,animate%20UI%2C%20SVG%2C%20Three.)
 GSAP (GreenSock Animation Platform) is a robust JavaScript library for creating high-performance animations. It offers an intuitive API and advanced features that enable developers to animate DOM elements with ease and efficiency.
+
+## Demo
+https://github.com/user-attachments/assets/2cc4e6d5-6d8b-4e73-8aff-f202118d8694
