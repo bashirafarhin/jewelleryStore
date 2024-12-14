@@ -61,6 +61,9 @@ const videoContainerAnimation = () => {
   let playBtn = document.getElementById("play");
   
   videoContainer.addEventListener("mouseenter", () => {
+      //same as writing playBtn.style.scale=1;
+      //playBtn.style.opacity=1;
+      //playBtn.style.ease="power2.out";
       gsap.to(playBtn, {
           scale: 1,
           opacity: 1,
