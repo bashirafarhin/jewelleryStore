@@ -1,8 +1,7 @@
 const locomotiveAnimation = () => {
     gsap.registerPlugin(ScrollTrigger);
-
 // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
-
+//this will give smooth smooth scroll animation to the page that is main div container
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector("#main"),
   smooth: true
@@ -30,7 +29,7 @@ ScrollTrigger.refresh();
 
 }
 locomotiveAnimation();
-
+//to change the logo from logo1 to logo2 when scrolling
 const navbarAnimation = () => {
     gsap.to("#nav-part1 img", {
         transform: "translateY(-100%)",
