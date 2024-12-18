@@ -20,6 +20,10 @@ body {
     background-color: #F7F7F7;
 }
 
+[data-scroll-container] {
+    overflow: hidden; /* Ensure Locomotive Scroll's custom behavior */
+}
+
 #nav {
     width: 100%;
     position: fixed;
